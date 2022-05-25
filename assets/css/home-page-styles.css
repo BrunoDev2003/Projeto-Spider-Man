@@ -37,3 +37,41 @@ body::before {
   vertical-align: middle;
 }
 
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card {
+  border: 0.5rem solid white;
+  width: calc(100% / 3 - 8%);
+  height: 70vh;
+  position: relative;
+}
+
+.card_background {
+  width: 100%;
+  height: 100%;;
+  object-fit: cover;
+  position: absolute;
+  opacity: 1;
+}
+
+
+.card_image {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+  position: absolute;
+}
+
+.card_title {
+  font-size:2em;
+  text-transform: uppercase;
+  text-align: center;
+  position:absolute;
+  width:100%;
+  bottom:0; 
+}
