@@ -118,3 +118,14 @@ body::before {
   position: absolute;
 
 }
+
+
+.card--hovered .card__background {
+  cursor: pointer;
+  opacity: 0;
+
+}
+
+.card--hovered .card_image {
+  transform: scale(1.4);
+}
