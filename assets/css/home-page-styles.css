@@ -131,3 +131,20 @@ body::before {
 .card--hovered .card_image {
   transform: scale(1.4);
 }
+
+body#Tobey-Maguire-hovered:before {
+  background-image: url('/assets/images/pic-sm-bg-01.jpg');
+}
+
+body#Tom-Holland-hovered:before {
+  background-image: url('/assets/images/pic-sm-bg-01.jpg');
+}
+
+body#Andrew-Garfield-hovered:before {
+  background-image: url('/assets/images/pic-sm-bg-01.jpg');
+}
+
+
+body[id^="spider-man"] ::before {
+  opacity: 1;
+}
