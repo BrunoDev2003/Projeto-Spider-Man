@@ -49,6 +49,7 @@ body::before {
   width: calc(100% / 3 - 8%);
   height: 70vh;
   position: relative;
+  transition: filter .5s ease-in-out;
 }
 
 .card_background {
@@ -130,21 +131,26 @@ body::before {
 
 .card--hovered .card_image {
   transform: scale(1.4);
+  filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.5));
 }
 
-body#Tobey-Maguire-hovered:before {
+body#Tobey-Maguire-hovered::before {
   background-image: url('/assets/images/pic-sm-bg-01.jpg');
 }
 
-body#Tom-Holland-hovered:before {
+body#Tom-Holland-hovered::before {
   background-image: url('/assets/images/pic-sm-bg-01.jpg');
 }
 
-body#Andrew-Garfield-hovered:before {
+body#Andrew-Garfield-hovered::before {
   background-image: url('/assets/images/pic-sm-bg-01.jpg');
 }
 
 
 body[id^="spider-man"] ::before {
   opacity: 1;
+}
+
+body[id^="spider-man"] .card:not(.card--hovered) {
+  filter: grayscale(100%);
 }
