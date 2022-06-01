@@ -154,3 +154,4 @@ body[id^="spider-man"] ::before {
 body[id^="spider-man"] .card:not(.card--hovered) {
   filter: grayscale(100%);
 }
+
