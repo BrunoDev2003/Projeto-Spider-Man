@@ -2,10 +2,65 @@
 
 .wrapper {
   display: flex;
-  height: 100%;
-  flex-flow: row-nowrap;
+  height: 100vh;
+  flex-flow: row nowrap;
+  background-color:grey;
 }
 
+.wrapper .left-column {
+  width: 100px;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.wrapper .main-content {
+  width: 100px;
+  height: 100%;
+  background-color: grey;
+  display : flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigator {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.navigator ul li {
+  margin: 60px;
+  
+}
+
+.navigator ul li-first-child {
+  margin-top: 0px;
+  
+}
+
+.navigator ul li-last-child {
+  margin-bottom: 0px;
+  
+}
+
+.navigator ul li a{
+  color: white;
+  border: solid 2px white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display:flex;
+  background-color: black;
+  align-items: center;
+  justify-content: center;
+
+}
 
 
