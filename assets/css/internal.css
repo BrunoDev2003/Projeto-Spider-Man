@@ -31,6 +31,17 @@
   justify-content: center;
 }
 
+.wrapper .main-content .logo img {
+  margin-top: 50px;
+  margin-left: 0px;
+  margin-bottom: 30px;
+}
+
+.pills ul {
+  display : flex;
+  flex-direction: row;
+}
+
 .navigator {
   height: 80vh;
   display: flex;
